@@ -8,7 +8,7 @@ class ProductData extends ProductModel {
     required super.category,
     required super.price,
     required super.discountPercentage,
-    required super.rating,
+    required super.rating, required super.images, required super.thumbnail,
   });
 
   factory ProductData.fromJson(Map<String, dynamic> json) {
@@ -20,6 +20,8 @@ class ProductData extends ProductModel {
       price: (json['price'] as num).toDouble(),
       discountPercentage: (json['discountPercentage'] as num).toDouble(),
       rating: (json['rating'] as num).toDouble(),
+      images: json['images'],
+      thumbnail: ['thumbnail'],
     );
   }
 
@@ -32,6 +34,8 @@ class ProductData extends ProductModel {
       'price': price,
       'discountPercentage': discountPercentage,
       'rating': rating,
+      'images': images,
+      'thumbnail': thumbnail,
     };
   }
 }

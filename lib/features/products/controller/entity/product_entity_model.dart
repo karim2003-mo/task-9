@@ -8,7 +8,8 @@ class ProductModel extends Equatable {
   final double price;
   final double discountPercentage;
   final double rating;
-
+  final List images;
+  final List thumbnail;
   const ProductModel({
     required this.id,
     required this.title,
@@ -17,6 +18,8 @@ class ProductModel extends Equatable {
     required this.price,
     required this.discountPercentage,
     required this.rating,
+    required this.images,
+    required this.thumbnail,
   });
 
   @override
