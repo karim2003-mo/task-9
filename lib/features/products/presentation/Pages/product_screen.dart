@@ -7,8 +7,11 @@ import 'package:task9/features/products/presentation/blocs/product_events.dart';
 import 'package:task9/features/products/presentation/blocs/product_states.dart';
 import 'package:task9/features/products/presentation/widgets/product_card.dart';
 
+import '../widgets/drawer.dart';
+import '../widgets/product_dialogue.dart';
+
 class ProductScreen extends StatefulWidget {
-  const ProductScreen({Key? key}) : super(key: key);
+  const ProductScreen({super.key});
 
   @override
   State<ProductScreen> createState() => _ProductScreenState();
@@ -20,7 +23,22 @@ class _ProductScreenState extends State<ProductScreen> {
   Widget build(BuildContext context) {
     final Object args= ModalRoute.of(context)?.settings.arguments as String;
     return Scaffold(
+      drawer: DrawerWidget(),
       appBar: AppBar(
+         actions: [
+          Builder(
+            builder: (context) => InkWell(
+              onTap:(){
+                Scaffold.of(context).openDrawer();
+              },
+              child: Container(child: Icon(
+                size: 40,
+                Icons.person,
+                color: Colors.blueGrey,
+                )),
+            ),
+          )
+        ],
         title: const Text('Products',
         style: TextStyle(fontWeight: FontWeight.w600,
         fontSize: 27
@@ -51,6 +69,9 @@ class _ProductScreenState extends State<ProductScreen> {
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
                         onTap: () {
+                          showDialog(context: context, builder: (context){
+                            return ProductDialogue(product: products[index],);
+                          });
                         },
                         child: ProductCard(
                           productName: products[index].title,

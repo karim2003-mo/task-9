@@ -1,0 +1,50 @@
+{
+  "formvalidations":{
+    "emailerror":"Invalid email",
+    "passworderror":"Password must be at least 6 characters long",
+    "nameerror":"Name must be at least 3 characters long"
+  },
+  "errors":{
+    "invalid-email":"Invalid email",
+    "user-not-found":"User not found",
+    "wrong-password":"Wrong password",
+    "email-already-in-use":"Email is already in use",
+    "unknown":"An unknown error occurred"
+  },
+  "signIn": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "dont_have_account":"don't have account?",
+    "signUp":"Sign Up",
+    "login": "Login"
+  },
+  "signUp": {
+    "title": "Sign Up",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "signUp": "Sign Up"
+  },
+  "categories":{
+    "title":"Categories",
+    "products":"Products",
+    "profile":"Profile",
+    "cart":"Cart",
+    "orders":"Orders",
+    "SignOut":"Sign Out"
+  },
+  "productdetails":"Product Details",
+  "addcard":{
+    "title":"Add Cart",
+    "cardNumber":"Card Number",
+    "cvv":"cvv",
+    "expiredDate":"Expired Date",
+    "add":"Add"
+  },
+  "cardNumberError":"Card Number is required",
+  "cvvError":"cvv is required",
+  "expiredDateError":"Expired Date is required"
+}

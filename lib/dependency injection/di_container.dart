@@ -9,6 +9,8 @@ import 'package:task9/features/products/data/dataSources/remote_data_source.dart
 import 'package:task9/features/products/data/repositories/data_repo.dart';
 import 'package:task9/features/products/presentation/blocs/product_blocs.dart';
 
+import '../features/auth/presentation/blocs/blocs.dart';
+
 final sl = GetIt.instance;
 setupLocator(){
   // UseCases
@@ -27,5 +29,6 @@ setupLocator(){
   // Blocs
     sl.registerFactory(()=>ProductBloc(getAllProductsUseCase:sl() , getOneProductUseCase: sl()));
     sl.registerFactory(()=>CategoryBloc(getAllCategoriesUseCase: sl()));
+    sl.registerFactory(()=>AuthBloc());
 
 }

@@ -1,0 +1,50 @@
+{
+  "formvalidations":{
+    "emailerror":"البريد الالكتروني غير صحيح",
+    "passworderror":"كلمة المرور يجب ان تكون اكثر من 6 احرف",
+    "nameerror":"الاسم يجب ان يكون اكثر من 3 احرف"
+  },
+  "errors":{
+    "invalid-email":"البريد الالكتروني غير صحيح",
+    "user-not-found":"المستخدم غير موجود",
+    "wrong-password":"كلمة المرور غير صحيحة",
+    "email-already-in-use":"البريد الالكتروني مستخدم",
+    "unknown":"حدث خطأ غير معروف"
+  },
+  "signIn": {
+    "title": "تسجيل الدخول",
+    "email": "البريد الالكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "dont_have_account":"لا تملك حساب؟",
+    "signUp":"انشأ حساب",
+    "login": "تسجيل الدخول"
+  },
+  "signUp": {
+    "title": "تسجيل حساب",
+    "name": "الاسم",
+    "email": "البريد الالكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "signUp": "انشأ حساب"
+  },
+  "categories":{
+    "title":"الاقسام",
+    "products":"المنتجات",
+    "profile":"الملف الشخصي",
+    "cart":"السلة",
+    "orders":"الطلبات",
+    "SignOut":"تسجيل الخروج"
+  },
+  "productdetails":"تفاصيل المنتج",
+  "addcard":{
+    "title":"اضافة سلة",
+    "cardNumber":"رقم البطاقة",
+    "cvv":"cvv",
+    "expiredDate":"تاريخ انتهاء البطاقة",
+    "add":"اضافة"
+  },
+  "cardNumberError":"رقم البطاقة غير صحيح",
+  "cvvError":"cvv غير صحيح",
+  "expiredDateError":"تاريخ انتهاء البطاقة غير صحيح"
+}

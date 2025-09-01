@@ -1,11 +1,11 @@
 {
-    "name": "task9",
-    "short_name": "task9",
+    "name": "BigShop",
+    "short_name": "BigShop",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "BigShop - Flutter e-commerce demo with Firebase and localization.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
