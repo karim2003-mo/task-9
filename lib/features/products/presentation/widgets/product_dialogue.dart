@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:task9/features/cart/presentation/pages/allcarts.dart';
 import 'package:task9/features/products/controller/entity/product_entity_model.dart';
 class ProductDialogue extends StatelessWidget {
   const ProductDialogue({super.key,required this.product});
@@ -47,7 +48,7 @@ class ProductDialogue extends StatelessWidget {
                 ),
               ),
               onPressed: ()async{
-                
+                Navigator.push(context, MaterialPageRoute(builder: (context) => AllCartsPage(isshow: false,)));
               }, child: Text('Add To Cart',
             style: TextStyle(
               fontSize: 22,
